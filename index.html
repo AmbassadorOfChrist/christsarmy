@@ -8,7 +8,7 @@
         }
         .center {
             text-align: center;
-            margin-top: 150px; /* Adds some space at the top */
+            margin-top: 50px; /* Adjust space at the top */
         }
         .image-container {
             display: flex; /* Arrange images side by side */
@@ -20,6 +20,7 @@
         .image-box {
             text-align: center;
             margin-top: 20px; /* Add some space between images */
+            width: calc(50% - 10px); /* Make each box take half of the available width */
         }
         .image-box img {
             width: 100%; /* Make images fill their container */
@@ -42,6 +43,8 @@
                     <div>Bible</div>
                 </a>
             </div>
+        </div>
+        <div class="image-container">
             <div class="image-box">
                 <a href="merch.html">
                     <img src="t-shirt-with-cross-on-it-.png" alt="Merch Image">

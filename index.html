@@ -12,12 +12,14 @@
         }
         .image-container {
             display: flex; /* Arrange images side by side */
+            flex-wrap: wrap; /* Wrap images to the next line if needed */
             justify-content: space-between; /* Put space between images */
             max-width: 600px; /* Limit the width of the images */
             margin: 0 auto; /* Center the images horizontally */
         }
         .image-box {
             text-align: center;
+            margin-top: 20px; /* Add some space between images */
         }
         .image-box img {
             width: 100%; /* Make images fill their container */
@@ -40,8 +42,19 @@
                     <div>Bible</div>
                 </a>
             </div>
+            <div class="image-box">
+                <a href="merch.html">
+                    <img src="t-shirt-with-cross-on-it-.png" alt="Merch Image">
+                    <div>Merch</div>
+                </a>
+            </div>
+            <div class="image-box">
+                <a href="articles.html">
+                    <img src="articles-.png" alt="Articles Image">
+                    <div>Articles</div>
+                </a>
+            </div>
         </div>
     </div>
 </body>
 </html>
-

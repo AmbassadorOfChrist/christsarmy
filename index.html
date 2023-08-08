@@ -6,10 +6,20 @@
             font-family: Arial, sans-serif;
             background-image: url('old paper.jpg'); /* Set the background image */
             background-size: cover; /* Make the background image cover the whole page */
+            margin: 0; /* Remove default margin */
         }
-        .center {
-            text-align: center;
-            margin-top: 50px; /* Adjust space at the top */
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px; /* Add space at the top */
+        }
+        .header {
+            font-weight: bold;
+            font-style: italic;
+            color: black;
+            font-size: 24px;
+            margin-bottom: 20px; /* Add space below the header */
         }
         .image-container {
             display: flex; /* Arrange images side by side */
@@ -30,7 +40,8 @@
     </style>
 </head>
 <body>
-    <div class="center">
+    <div class="page-container">
+        <div class="header">Christ's Army</div>
         <div class="image-container">
             <div class="image-box">
                 <a href="pictures.html">
@@ -62,3 +73,4 @@
     </div>
 </body>
 </html>
+

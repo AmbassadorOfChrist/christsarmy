@@ -10,32 +10,38 @@
             text-align: center;
             margin-top: 150px; /* Adds some space at the top */
         }
-        .lion-image {
-            display: inline-block; /* Makes the image and text stay in the same line */
-            position: relative; /* Allows us to position the text on the image */
+        .image-container {
+            display: flex; /* Arrange images side by side */
+            justify-content: space-between; /* Put space between images */
+            max-width: 600px; /* Limit the width of the images */
+            margin: 0 auto; /* Center the images horizontally */
         }
-        .lion-image img {
-            width: 50%; /* Makes the image half as big */
-            max-width: 300px; /* Limits the maximum width of the image */
+        .image-box {
+            text-align: center;
         }
-        .text-on-image {
-            position: absolute;
-            top: 50%; /* Moves the text to the middle vertically */
-            left: 50%; /* Moves the text to the middle horizontally */
-            transform: translate(-50%, -50%); /* Centers the text perfectly */
-            font-weight: bold;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px 20px;
+        .image-box img {
+            width: 100%; /* Make images fill their container */
+            max-width: 200px; /* Limit the maximum image width */
         }
     </style>
 </head>
 <body>
     <div class="center">
-        <a href="pictures.html" class="lion-image">
-            <img src="lion--head-roaring-.png" alt="Lion Image">
-            <div class="text-on-image">Pictures</div>
-        </a>
+        <div class="image-container">
+            <div class="image-box">
+                <a href="pictures.html">
+                    <img src="lion--head-roaring-.png" alt="Lion Image">
+                    <div>Pictures</div>
+                </a>
+            </div>
+            <div class="image-box">
+                <a href="bible.html">
+                    <img src="bible-.png" alt="Bible Image">
+                    <div>Bible</div>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
